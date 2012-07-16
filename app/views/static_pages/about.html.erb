@@ -1,2 +1,15 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<% provide(:title, 'About Us') %>
+<html>
+  <head>
+    <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
+  </head>
+  <body>
+    <h1>About Us</h1>
+    <p>
+      Get Help on the Ruby on rails tutorial at the
+      <a href="http://railstutorial.org/help">Rails Tutorial Help page</a>
+      to get help on this sample app, see the
+      <a href="http://railstutorial.org/book">Rails Tutorial Book</a>
+    </p>
+  </body>
+</html>
