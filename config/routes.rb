@@ -1,12 +1,11 @@
 SampleApp::Application.routes.draw do
 
- # get "users/new"
-
-#  get "static_pages/home"
-#  get "static_pages/help"
-#  get "static_pages/about"
-#  get "static_pages/contact"
-#  get "static_pages/mission"
+# get "users/new"
+# get "static_pages/home"
+# get "static_pages/help"
+# get "static_pages/about"
+# get "static_pages/contact"
+# get "static_pages/mission"
   #match '/sign_up', to: 'users#new'
   #match '/home', to: 'static_pages#home'
   #match '/', to: 'static_pages#home'
