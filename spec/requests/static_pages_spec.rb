@@ -21,6 +21,17 @@ describe "StaticPages" do
       page.should_not have_selector('title',
                       :text => ' | Home')
      end
+
+#    it "should have the right links on the layout" do
+#      visit root_path
+#      click_link "About"
+#      page.should have_selector('title', text: full_title('About Us'))
+#      click_link "Help"
+#
+#      click_link "Contact"
+#      click_link "Home"
+#      click_link "Sign up now!"
+#    end
   end
 
   describe "Help page" do
