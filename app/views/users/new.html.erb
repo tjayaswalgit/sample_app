@@ -1,15 +1,24 @@
 <% provide(:title, 'Sign up') %>
-<html>
-  <head>
-    <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
-  </head>
-  <body>
-    <h1>Sign up</h1>
-    <p>
-      Get Help on the Ruby on rails tutorial at the
-      <a href="http://railstutorial.org/help">Rails Tutorial Help page</a>
-      to get help on this sample app, see the
-      <a href="http://railstutorial.org/book">Rails Tutorial Book</a>
-    </p>
-  </body>
-</html>
+<h1>Sign up</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@user) do |f| %>
+    <%= render 'shared/error_messages' %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
