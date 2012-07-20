@@ -3,11 +3,20 @@ require 'spec_helper'
 describe "UserPages" do
   subject {page}
 
+  describe "remember token" do
+    let(:user) { FactoryGirl.create(:user)}
+    before { @user.save }
+    its(:remember_token) { should_not be_blank }
+  end
+
   describe "signup" do
     before { visit signup_path }
 
     let(:submit) { "Create my account" }
 
+    it { should respond_to(:password_confirmation) }
+    it { should respond_to(:remember_token) }
+    it { should respond_to(:authenticate) }
 
 
     describe "with invalid information" do
@@ -66,6 +75,7 @@ describe "UserPages" do
       visit signup_path
       page.should have_selector('title',
                       text: 'Sign up')
-     end     
+     end
+     
   end
 end
