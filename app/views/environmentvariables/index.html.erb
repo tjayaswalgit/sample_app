@@ -1,0 +1,20 @@
+request.env["REMOTE_ADDR"]:
+<h2>Displaying Environment Variables</h2>
+REQUEST_URI: <%= request.env["REQUEST_URI"] %> <br />
+SERVER_NAME: <%= request.env["SERVER_NAME"] %> <br />
+SERVER_PROTOCOL: <%= request.env["SERVER_PROTOCOL"] %> <br />
+SERVER_PORT: <%= request.env["SERVER_PORT"] %> <br />
+REQUEST_METHOD: <%= request.env["REQUEST_METHOD"] %> <br />
+PATH_INFO: <%= request.env["PATH_INFO"] %> <br />
+PATH_TRANSLATED: <%= request.env["PATH_TRANSLATED"] %> <br />
+SCRIPT_NAME: <%= request.env["SCRIPT_NAME"] %> <br />
+QUERY_STRING: <%= request.env["QUERY_STRING"] %> <br />
+REMOTE_HOST: <%= request.env["REMOTE_HOST"] %> <br />
+REMOTE_ADDR: <%= request.env["REMOTE_ADDR"] %> <br />
+CONTENT_TYPE: <%= request.env["CONTENT_TYPE"] %> <br />
+CONTENT_LENGTH: <%= request.env["CONTENT_LENGTH"] %> <br />
+HTTP_ACCEPT: <%= request.env["HTTP_ACCEPT"] %> <br />
+HTTP_USER_AGENT: <%= request.env["HTTP_USER_AGENT"] %> <br />
+
+
+<%= link_to 'New Category', new_category_path %>
