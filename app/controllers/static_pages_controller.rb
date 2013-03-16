@@ -17,4 +17,24 @@ class StaticPagesController < ApplicationController
 
   def mission
   end
+  
+  def sitemap
+  end
+  
+  def faq
+  end
+  
+  def advertise
+  end
+  
+  def terms_and_conditions
+  end
+
+  def privacy_policy
+  end
+
+  def about_homeopathy
+  end
+
+
 end
