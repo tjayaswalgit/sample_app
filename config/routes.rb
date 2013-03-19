@@ -26,7 +26,16 @@ SampleApp::Application.routes.draw do
   match '/about', to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
   match '/about_homeopathy', to: 'static_pages#about_homeopathy'
-  match '/mission', to: 'static_pages#mission'
+  match '/faq', to: 'static_pages#faq'
+  match '/sitemap', to: 'static_pages#sitemap'
+  match '/disclaimer', to: 'static_pages#disclaimer'
+  match '/resources', to: 'static_pages#resources'
+  match '/consult_us', to: 'static_pages#consult_us'
+  match '/testimonials', to: 'static_pages#testimonials'
+
+  match '/case_studies', to: 'static_pages#case_studies'
+  match '/feedback', to: 'static_pages#feedback'
+
  
 
   # The priority is based upon order of creation:

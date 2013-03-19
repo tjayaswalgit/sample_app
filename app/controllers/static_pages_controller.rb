@@ -27,14 +27,16 @@ class StaticPagesController < ApplicationController
   def advertise
   end
   
-  def terms_and_conditions
-  end
-
-  def privacy_policy
+  def disclaimer
   end
 
   def about_homeopathy
   end
 
+  def case_studies
+  end
+
+  def testimonials
+  end
 
 end
